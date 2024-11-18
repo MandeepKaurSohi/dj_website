@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Contact Us</h2>
+<p>We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+<form method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form>
+{% endblock %}
